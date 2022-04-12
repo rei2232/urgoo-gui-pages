@@ -22,7 +22,7 @@ export class Movie {
         return `
         <style>
             .poster {
-                width: 300px;
+                width: 200px;
             }
         </style>
         <a href="#" _target="_self">
