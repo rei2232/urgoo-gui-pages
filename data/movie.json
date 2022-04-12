@@ -1,0 +1,56 @@
+{
+    "movies": [
+      {
+        "_id": "6ae7f7ega7g7ae7ee",
+        "title" : "Batman",
+        "image_url": "./assets/images/batman-mid-poster.jpg",
+        "director": "Matt Reeves",
+        "duration": 175,
+        "actors": [
+          "Robert Pattinson",
+          "Zoe Kravitz",
+          "Paul Dano",
+          "Collin Farrell"
+        ]
+      },
+      {
+        "_id": "6a8fd8gd8e8e8e",
+        "title": "Spider-Man: No Way Home ",
+        "image_url": "./assets/images/spider-poster.jpg",
+        "director": "Jon Watts",
+        "duration": 148,
+        "actors": [
+          "Tom Holland",
+          "Zendaya",
+          "Paul Dano",
+          "Collin Farrell"
+        ]
+      },
+      {
+        "_id": "6a8fd8gd8e8e8e",
+        "title": "Interstellar",
+        "image_url": "./assets/images/intersteller-poster.jpg",
+        "director": "Jon Watts",
+        "duration": 148,
+        "actors": [
+          "Tom Holland",
+          "Zendaya",
+          "Paul Dano",
+          "Collin Farrell"
+        ]
+      },
+      {
+        "_id": "6aaat44tfsgttsftt55",
+        "title": "Shin Godzilla",
+        "image_url": "./assets/images/godzilla-poster.jpg",
+        "director": "Jon Watts",
+        "duration": 148,
+        "actors": [
+          "Tom Holland",
+          "Zendaya",
+          "Paul Dano",
+          "Collin Farrell"
+        ]
+      }
+    ]
+  }
