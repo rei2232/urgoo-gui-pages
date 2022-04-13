@@ -5,6 +5,7 @@
         "title" : "Batman",
         "image_url": "./assets/images/batman-mid-poster.jpg",
         "director": "Matt Reeves",
+        "state": "ongoing",
         "duration": 175,
         "actors": [
           "Robert Pattinson",
@@ -19,6 +20,7 @@
         "image_url": "./assets/images/spider-poster.jpg",
         "director": "Jon Watts",
         "duration": 148,
+        "state": "ongoing",
         "actors": [
           "Tom Holland",
           "Zendaya",
@@ -31,6 +33,7 @@
         "title": "Interstellar",
         "image_url": "./assets/images/intersteller-poster.jpg",
         "director": "Jon Watts",
+        "state": "ongoing",
         "duration": 148,
         "actors": [
           "Tom Holland",
@@ -44,6 +47,7 @@
         "title": "Shin Godzilla",
         "image_url": "./assets/images/godzilla-poster.jpg",
         "director": "Jon Watts",
+        "state": "ongoing",
         "duration": 148,
         "actors": [
           "Tom Holland",
