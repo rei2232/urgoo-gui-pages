@@ -1,8 +1,10 @@
-function Component(props, context, updater) {
+function Component(props, classes) {
   this.props = props
-  this.context = context
-  this.refs = {}
-  this.updater = updater
+  this.classes = classes
+  this.state = []
+  // this.context = context
+  // this.refs = refs
+  // this.updater = updater
   return this
 }
 export {Component}

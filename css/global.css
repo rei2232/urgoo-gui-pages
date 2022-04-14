@@ -29,5 +29,5 @@ body {
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        font-family: Roboto Regular !important;
+        font-family: Roboto Regular, sans-serif !important;
 }
