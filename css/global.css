@@ -32,3 +32,15 @@ body {
         -moz-osx-font-smoothing: grayscale;
         font-family: Roboto Regular, sans-serif !important;
 }
+#root {
+        border: 1px solid #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // test
+        display: flex;
+        gap: 15px;
+        padding: 25px;
+        margin-top: 45px;
+}

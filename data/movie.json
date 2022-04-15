@@ -55,6 +55,20 @@
           "Paul Dano",
           "Collin Farrell"
         ]
+      },
+      {
+        "_id": "5ad8d8fd8d8f8d",
+        "title": "Scream",
+        "image_url": "./assets/images/scream-poster.jpg",
+        "director": "Jon Watts",
+        "state": "ongoing",
+        "duration": 166,
+        "actors": [
+          "Tom Holland",
+          "Zendaya",
+          "Paul Dano",
+          "Collin Farrell"
+        ]
       }
     ]
   }

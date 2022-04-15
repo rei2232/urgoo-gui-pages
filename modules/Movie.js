@@ -1,31 +1,27 @@
+import Poster from "../components/base/Poster.js";
 export const getMovies = (url, list) => {
     fetch(url)
         .then(response => response.json())
         .then(data => {
             let movies = []
-            data.movies.forEach((movie) => {movies.push(new Movie(movie.title, movie.image_url))})
+            data.movies.forEach((movie) => {movies.push(new Movie(movie._id ,movie.title, movie.image_url))})
             list(movies)
         })
 } 
 
 
 export class Movie {
-    constructor(_title, _image_url) {
+    constructor(_id, _title, _image_url) {
+        this.id = _id
+        this.poster = {}
         this.title = _title
         this.image_url = _image_url
+        console.log(this.id)
     }
 
     
     Create() {
-        return `
-        <style>
-            .poster {
-                width: 200px;
-            }
-        </style>
-        <a href="#" _target="_self" style="text-decoration: none;">
-         <img class="poster" src="${this.image_url}" alt="${this.title} poster"> 
-        </a>
-        `
+      this.poster = Poster.Poster(null, 'poster', this.image_url, '/movie/' + this.id)
+      return this.poster.render
     }
 }
