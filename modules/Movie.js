@@ -16,7 +16,6 @@ export class Movie {
         this.poster = {}
         this.title = _title
         this.image_url = _image_url
-        console.log(this.id)
     }
 
     

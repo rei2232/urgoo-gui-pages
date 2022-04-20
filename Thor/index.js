@@ -6,5 +6,4 @@ let Thor =  {
   CreateElement,
   EventBubble
 }
-
 export default Thor
