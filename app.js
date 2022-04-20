@@ -1,7 +1,4 @@
 import {getMovies} from './modules/Movie.js'
-import Thor from './Thor'
-import ReButton from './components/base/ReButton.js'
-import Poster from "./components/base/Poster.js";
 const url = './data/movie.json'
 // JSON өгөгдлөөс Poster компонентийг ашиглан Poster зургуудыг үүсгэх
 getMovies(url, (movies) => {

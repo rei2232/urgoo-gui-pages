@@ -1,4 +1,4 @@
-import Thor from '../../Thor'
+import Thor from '../../Thor/index.js'
 // Зурагт постер үзүүлэх компонент
 /* Blueprint
   <div>
