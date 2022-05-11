@@ -1,50 +1,7 @@
 import {getMovies} from './modules/Movie.js'
 const url = './data/movie.json'
-let routes = {}
-let templates = {}
 let root_div = document.getElementById('root')
-function home() {
 
-}
-function movie() {
-
-}
-function route(path, template) {
-    if (typeof template == 'function') {
-        return routes[path] = template;
-    }
-    else if (typeof template == 'string') {
-        return routes[path] = templates[template]
-    } else
-        return;
-}
-function template (name, templateFunction) {
-    return templates[name] = templateFunction
-}
-template('home', function() {
-    home()
-})
-template('movie', function() {
-    movie()
-})
-route('/', 'home')
-route('/movie', 'movie')
-
-function resolveRoute(route) {
-    try {
-        return routes[route]
-    } catch (e) {
-        throw new Error(`Route ${route} not found`)
-    }
-}
-function router(evt) {
-    let url = window.location.hash.slice(1) || '/'
-    let route = resolveRoute(url)
-
-    route()
-}
-window.addEventListener('load', router)
-window.addEventListener('hashchange', router)
 // JSON өгөгдлөөс Poster компонентийг ашиглан Poster зургуудыг үүсгэх
 getMovies(url, (movies) => {
     movies.forEach((movie) => {
