@@ -1,0 +1,74 @@
+{
+    "movies": [
+      {
+        "_id": "101a",
+        "title" : "Batman",
+        "image_url": "./assets/images/batman-mid-poster.jpg",
+        "director": "Matt Reeves",
+        "state": "ongoing",
+        "duration": 175,
+        "actors": [
+          "Robert Pattinson",
+          "Zoe Kravitz",
+          "Paul Dano",
+          "Collin Farrell"
+        ]
+      },
+      {
+        "_id": "102a",
+        "title": "Spider-Man: No Way Home ",
+        "image_url": "./assets/images/spider-poster.jpg",
+        "director": "Jon Watts",
+        "duration": 148,
+        "state": "ongoing",
+        "actors": [
+          "Tom Holland",
+          "Zendaya",
+          "Paul Dano",
+          "Collin Farrell"
+        ]
+      },
+      {
+        "_id": "103a",
+        "title": "Interstellar",
+        "image_url": "./assets/images/intersteller-poster.jpg",
+        "director": "Jon Watts",
+        "state": "ongoing",
+        "duration": 148,
+        "actors": [
+          "Tom Holland",
+          "Zendaya",
+          "Paul Dano",
+          "Collin Farrell"
+        ]
+      },
+      {
+        "_id": "104a",
+        "title": "Shin Godzilla",
+        "image_url": "./assets/images/godzilla-poster.jpg",
+        "director": "Jon Watts",
+        "state": "ongoing",
+        "duration": 148,
+        "actors": [
+          "Tom Holland",
+          "Zendaya",
+          "Paul Dano",
+          "Collin Farrell"
+        ]
+      },
+      {
+        "_id": "105a",
+        "title": "Scream",
+        "image_url": "./assets/images/scream-poster.jpg",
+        "director": "Jon Watts",
+        "state": "ongoing",
+        "duration": 166,
+        "actors": [
+          "Tom Holland",
+          "Zendaya",
+          "Paul Dano",
+          "Collin Farrell"
+        ]
+      }
+    ]
+  }
