@@ -1,4 +1,4 @@
-import Thor from '../../Thor/index.js'
+import Thor from "../../Thor/index.js"
 function ReButton(props, text, classes) {
   // component үүсгэх.
   this.component = Thor.Component(props)
