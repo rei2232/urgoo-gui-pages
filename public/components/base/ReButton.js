@@ -9,7 +9,7 @@ function ReButton(props, text, classes) {
   this.element.textContent = text
   // onClick буюу товч дээр дарах үеийн ажиллах функц
   this.onClick = () => {
-    console.log('ReButton event clicked: ', classes)
+    location.assign('/movie/101a101a')
   }
   // button html элементээ render гэсэн хувьсагчид хадгална.
   this.render = this.element

@@ -1,4 +1,4 @@
-import Poster from "../components/base/Poster.js";
+import Poster from "../components/base/Poster.js"
 export const getMovies = (url, list) => {
     fetch(url)
         .then(response => response.json())
@@ -20,7 +20,7 @@ export class Movie {
 
     
     Create() {
-      this.poster = Poster.Poster(null, 'poster', this.image_url, '/movie/' + this.id)
+      this.poster = Poster.Poster(null, 'poster', this.image_url, `/movie/${this.id}` + this.id)
       return this.poster.render
     }
 }
