@@ -18,7 +18,7 @@ function Poster(props, classes, img_url, redirect_url) {
   const a_element = document.createElement('a')
   a_element.className = classes + '-a'
   // a_element.href = window.location.href + redirect_url
-  a_element.href = '/movie'
+  a_element.href = redirect_url
   a_element.target = '_self'
   // <div> дотор хийж өгнө
   docFrag.firstChild.appendChild(a_element)
