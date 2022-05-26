@@ -6,6 +6,14 @@ const pool = new Pool({
     password: 'admin',
     port: 5432,
 })
+const listMovies = (request, response) => {
+    pool.query('SELECT * FROM movie ORDER BY mid ASC', (error, results) => {
+        if (error) {
+            throw error
+        }
+        response.status(200).json(results.rows)
+    })
+}
 const createMovie = (request, response) => {
     const {title, image_url, director, mstate, duration, releasedate} = request.body
 
@@ -17,5 +25,6 @@ const createMovie = (request, response) => {
     })
 }
 module.exports = {
-    createMovie
+    createMovie,
+    listMovies
 }

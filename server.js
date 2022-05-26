@@ -20,4 +20,5 @@ app.use(
 //     res.sendFile(path.join(__dirname+'/index.html'))
 // });
 app.post('/api/movie', db.createMovie)
+app.get('/api/movie/list', db.listMovies)
 app.listen(process.env.PORT || port, () => console.log("server is now running."))
