@@ -8,8 +8,6 @@ export const getMovies = (url, list) => {
             list(movies)
         })
 } 
-
-
 export class Movie {
     constructor(_id, _title, _image_url) {
         this.id = _id
@@ -17,10 +15,8 @@ export class Movie {
         this.title = _title
         this.image_url = _image_url
     }
-
-    
     Create() {
-      this.poster = Poster.Poster(null, 'poster', this.image_url, `/movie/${this.id}` + this.id)
+      this.poster = Poster.Poster(null, 'poster', this.image_url, `/movie/${this.id}`)
       return this.poster.render
     }
 }
