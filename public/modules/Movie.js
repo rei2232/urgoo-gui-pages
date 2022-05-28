@@ -4,7 +4,7 @@ export const getMovies = (url, list) => {
         .then(response => response.json())
         .then(data => {
             let movies = []
-            data.movies.forEach((movie) => {movies.push(new Movie(movie._id ,movie.title, movie.image_url))})
+            data?.forEach((movie) => {movies.push(new Movie(movie.mid ,movie.title, movie.image_url))})
             list(movies)
         })
 } 

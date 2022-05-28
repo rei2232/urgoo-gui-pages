@@ -1,6 +1,5 @@
 const express = require('express')
 const path = require('path')
-const db = require('./query')
 const bodyParser = require('body-parser')
 const app = express()
 const port = 3000
@@ -12,13 +11,21 @@ app.use(
         extended: true,
     })
 )
-// app.use(express.static('public'))
-// app.get('/movie/:id',function(req,res){
-//     res.sendFile(path.join(__dirname+'/public/movie.html'))
-// });
-// router.get('/',function(req,res){
-//     res.sendFile(path.join(__dirname+'/index.html'))
-// });
-app.post('/api/movie', db.createMovie)
-app.get('/api/movie/list', db.listMovies)
+app.use(express.static('public'))
+app.all('/*', (req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
+// SECURITY
+app.disable('x-powered-by');
+
+app.get('/movie/:id',function(req,res){
+    res.sendFile(path.join(__dirname+'/public/movie.html'))
+});
+router.get('/',function(req,res){
+    res.sendFile(path.join(__dirname+'/index.html'))
+});
 app.listen(process.env.PORT || port, () => console.log("server is now running."))
