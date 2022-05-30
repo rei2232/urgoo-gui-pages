@@ -1,5 +1,5 @@
 import ReButton from "./base/ReButton.js";
-import Thor from "../Thor/index.js"
+import Thor from "../Thor/index.js";
 const welcome_template = document.createElement('template')
 
 const btn = ReButton.ReButton({name: 'welcome button'},'Тасалбар захиалах','welcome-btn')

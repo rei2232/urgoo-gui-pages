@@ -49,8 +49,8 @@ footer_template.innerHTML = `
 </style>
 <footer class="footer-container">
     <div class="footer-logo-wrapper">
-        <img src="/assets/images/logo.png" class="urgoo-logo" alt="urgoo logo" >
-        <img src="/assets/images/urgoo-more.png" class="urgoo-more-logo" alt="urgoo logo 2">
+        <img src="./assets/images/logo.png" class="urgoo-logo" alt="urgoo logo" >
+        <img src="./assets/images/urgoo-more.png" class="urgoo-more-logo" alt="urgoo logo 2">
     </div>
     
     <section class="footer-nav">

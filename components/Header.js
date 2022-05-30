@@ -35,7 +35,7 @@ header_template.innerHTML = `
 </style>
 <header class="header">
 <nav class="top-menu">
-    <img src="/assets/images/imaxblue.png" class="top-menu-logo" alt="urgoo logo">
+    <img src="./assets/images/imaxblue.png" class="top-menu-logo" alt="urgoo logo">
     <ul class="top-menu-items">
         <li><a href="#" target="_self">Эхлэх</a></li>
         <li><a href="#" target="_blank">Тун удахгүй</a></li>

@@ -1,4 +1,4 @@
-import Thor from "../../Thor/index.js"
+import Thor from '../../Thor/index.js'
 function ReButton(props, text, classes) {
   // component үүсгэх.
   this.component = Thor.Component(props)
@@ -9,7 +9,7 @@ function ReButton(props, text, classes) {
   this.element.textContent = text
   // onClick буюу товч дээр дарах үеийн ажиллах функц
   this.onClick = () => {
-    location.assign('/movie/101a101a')
+    console.log('ReButton event clicked: ', classes)
   }
   // button html элементээ render гэсэн хувьсагчид хадгална.
   this.render = this.element
